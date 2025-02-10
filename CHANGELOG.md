@@ -13,3 +13,7 @@
 ## 1.0.4
 
 - fix getCategories
+
+## 1.0.5
+
+- add getOverviewVideos

@@ -18,7 +18,7 @@ Future<void> main() async {
 
   try {
     // Use the API to retrieve the video list
-    final response = await api.getVideos(isLocal: true);
+    final response = await api.getVideos(isLocal: true,);
     if (response.data != null) {
       // Print the video data if it's not null
       print(response.data);

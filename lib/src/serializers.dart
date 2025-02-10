@@ -94,6 +94,9 @@ import 'package:peer_tube_api_sdk/src/model/automatic_tag_available_available_in
 import 'package:peer_tube_api_sdk/src/model/block_status.dart';
 import 'package:peer_tube_api_sdk/src/model/block_status_accounts_value.dart';
 import 'package:peer_tube_api_sdk/src/model/block_status_hosts_value.dart';
+import 'package:peer_tube_api_sdk/src/model/category_overview.dart';
+import 'package:peer_tube_api_sdk/src/model/channel.dart';
+import 'package:peer_tube_api_sdk/src/model/channel_overview.dart';
 import 'package:peer_tube_api_sdk/src/model/comment_auto_tag_policies.dart';
 import 'package:peer_tube_api_sdk/src/model/comment_thread_post_response.dart';
 import 'package:peer_tube_api_sdk/src/model/comment_thread_response.dart';
@@ -145,6 +148,7 @@ import 'package:peer_tube_api_sdk/src/model/notification_video.dart';
 import 'package:peer_tube_api_sdk/src/model/notification_video_abuse.dart';
 import 'package:peer_tube_api_sdk/src/model/notification_video_import.dart';
 import 'package:peer_tube_api_sdk/src/model/o_auth_client.dart';
+import 'package:peer_tube_api_sdk/src/model/overview_videos_response.dart';
 import 'package:peer_tube_api_sdk/src/model/playback_metric_create.dart';
 import 'package:peer_tube_api_sdk/src/model/playlist_element.dart';
 import 'package:peer_tube_api_sdk/src/model/plugin.dart';
@@ -234,6 +238,7 @@ import 'package:peer_tube_api_sdk/src/model/server_config_views_views_watching_i
 import 'package:peer_tube_api_sdk/src/model/server_stats.dart';
 import 'package:peer_tube_api_sdk/src/model/server_stats_videos_redundancy_inner.dart';
 import 'package:peer_tube_api_sdk/src/model/storyboard.dart';
+import 'package:peer_tube_api_sdk/src/model/tag_overview.dart';
 import 'package:peer_tube_api_sdk/src/model/uninstall_plugin_request.dart';
 import 'package:peer_tube_api_sdk/src/model/update_me.dart';
 import 'package:peer_tube_api_sdk/src/model/update_user.dart';
@@ -419,6 +424,9 @@ part 'serializers.g.dart';
   BlockStatus,
   BlockStatusAccountsValue,
   BlockStatusHostsValue,
+  CategoryOverview,
+  Channel,
+  ChannelOverview,
   CommentAutoTagPolicies,
   CommentThreadPostResponse,
   CommentThreadResponse,
@@ -470,6 +478,7 @@ part 'serializers.g.dart';
   NotificationVideoAbuse,
   NotificationVideoImport,
   OAuthClient,
+  OverviewVideosResponse,
   PlaybackMetricCreate,
   PlaylistElement,
   Plugin,
@@ -561,6 +570,7 @@ part 'serializers.g.dart';
   ServerStats,
   ServerStatsVideosRedundancyInner,
   Storyboard,
+  TagOverview,
   UninstallPluginRequest,
   UpdateMe,
   UpdateUser,

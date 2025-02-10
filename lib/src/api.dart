@@ -59,6 +59,9 @@ import 'package:peer_tube_api_sdk/src/api/video_transcoding_api.dart';
 import 'package:peer_tube_api_sdk/src/api/video_upload_api.dart';
 import 'package:peer_tube_api_sdk/src/api/videos_api.dart';
 import 'package:peer_tube_api_sdk/src/api/watched_words_api.dart';
+import 'package:peer_tube_api_sdk/src/api/watched_words_api.dart';
+import 'package:peer_tube_api_sdk/src/api/overview_videos_api.dart';
+
 import 'package:peer_tube_api_sdk/src/version.g.dart';
 
 import 'auth/status_code.dart';
@@ -291,6 +294,12 @@ class PeerTubeApiSdk {
     return MyUserApi(_dio, _serializers);
   }
 
+  /// Get OverviewVideosApi instance, base route and serializer can be overridden by a given but be careful,
+  /// by doing that all interceptors will not be executed
+  OverviewVideosApi getOverviewVideosApi() {
+    return OverviewVideosApi(_dio, _serializers);
+  }
+
   /// Get PluginsApi instance, base route and serializer can be overridden by a given but be careful,
   /// by doing that all interceptors will not be executed
   PluginsApi getPluginsApi() {
@@ -482,10 +491,11 @@ class PeerTubeApiSdk {
   VideosApi getVideosApi() {
     return VideosApi(_dio, _serializers);
   }
-
+  
   /// Get WatchedWordsApi instance, base route and serializer can be overridden by a given but be careful,
   /// by doing that all interceptors will not be executed
   WatchedWordsApi getWatchedWordsApi() {
     return WatchedWordsApi(_dio, _serializers);
   }
+
 }

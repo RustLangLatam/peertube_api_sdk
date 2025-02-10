@@ -8,19 +8,14 @@ part of 'video_channel_edit.dart';
 
 abstract mixin class VideoChannelEditBuilder {
   void replace(VideoChannelEdit other);
-
   void update(void Function(VideoChannelEditBuilder) updates);
-
   JsonObject? get displayName;
-
   set displayName(JsonObject? displayName);
 
   JsonObject? get description;
-
   set description(JsonObject? description);
 
   JsonObject? get support;
-
   set support(JsonObject? support);
 }
 
@@ -83,23 +78,17 @@ class $VideoChannelEditBuilder
   _$$VideoChannelEdit? _$v;
 
   JsonObject? _displayName;
-
   JsonObject? get displayName => _$this._displayName;
-
   set displayName(covariant JsonObject? displayName) =>
       _$this._displayName = displayName;
 
   JsonObject? _description;
-
   JsonObject? get description => _$this._description;
-
   set description(covariant JsonObject? description) =>
       _$this._description = description;
 
   JsonObject? _support;
-
   JsonObject? get support => _$this._support;
-
   set support(covariant JsonObject? support) => _$this._support = support;
 
   $VideoChannelEditBuilder() {

@@ -49,6 +49,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(ApiV1AbusesPostRequestAccount.serializer)
       ..add(ApiV1AbusesPostRequestComment.serializer)
       ..add(ApiV1AbusesPostRequestPredefinedReasonsEnum.serializer)
+      ..add(ApiV1AbusesPostRequestPredefinedReasonsEnum.serializer)
       ..add(ApiV1AbusesPostRequestVideo.serializer)
       ..add(ApiV1AutomaticTagsPoliciesAccountsAccountNameCommentsPutRequest
           .serializer)
@@ -103,6 +104,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(BlockStatus.serializer)
       ..add(BlockStatusAccountsValue.serializer)
       ..add(BlockStatusHostsValue.serializer)
+      ..add(CategoryOverview.serializer)
+      ..add(Channel.serializer)
+      ..add(ChannelOverview.serializer)
       ..add(CommentAutoTagPolicies.serializer)
       ..add(CommentThreadPostResponse.serializer)
       ..add(CommentThreadResponse.serializer)
@@ -164,6 +168,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(NotificationVideoAbuse.serializer)
       ..add(NotificationVideoImport.serializer)
       ..add(OAuthClient.serializer)
+      ..add(OverviewVideosResponse.serializer)
       ..add(PlaybackMetricCreate.serializer)
       ..add(PlaybackMetricCreatePlayerModeEnum.serializer)
       ..add(PlaylistElement.serializer)
@@ -255,6 +260,7 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(ServerStats.serializer)
       ..add(ServerStatsVideosRedundancyInner.serializer)
       ..add(Storyboard.serializer)
+      ..add(TagOverview.serializer)
       ..add(UninstallPluginRequest.serializer)
       ..add(UpdateMe.serializer)
       ..add(UpdateMeDisplayNSFWEnum.serializer)
@@ -407,6 +413,9 @@ Serializers _$serializers = (new Serializers().toBuilder()
           const FullType(BuiltList, const [const FullType(ActorImage)]),
           () => new ListBuilder<ActorImage>())
       ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(ActorImage)]),
+          () => new ListBuilder<ActorImage>())
+      ..addBuilderFactory(
           const FullType(BuiltList, const [
             const FullType(ApiV1AbusesPostRequestPredefinedReasonsEnum)
           ]),
@@ -434,6 +443,15 @@ Serializers _$serializers = (new Serializers().toBuilder()
           const FullType(BuiltList,
               const [const FullType(AutomaticTagAvailableAvailableInner)]),
           () => new ListBuilder<AutomaticTagAvailableAvailableInner>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(CategoryOverview)]),
+          () => new ListBuilder<CategoryOverview>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(ChannelOverview)]),
+          () => new ListBuilder<ChannelOverview>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(TagOverview)]),
+          () => new ListBuilder<TagOverview>())
       ..addBuilderFactory(
           const FullType(
               BuiltList, const [const FullType(FileRedundancyInformation)]),
@@ -549,6 +567,15 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(UserRegistration)]),
           () => new ListBuilder<UserRegistration>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(Video)]),
+          () => new ListBuilder<Video>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(Video)]),
+          () => new ListBuilder<Video>())
+      ..addBuilderFactory(
+          const FullType(BuiltList, const [const FullType(Video)]),
+          () => new ListBuilder<Video>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(Video)]),
           () => new ListBuilder<Video>())

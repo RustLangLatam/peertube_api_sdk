@@ -6,7 +6,6 @@
 export 'package:one_of/one_of.dart';
 export 'package:built_value/json_object.dart';
 
-// export api;
 export 'package:peer_tube_api_sdk/src/api.dart';
 export 'package:peer_tube_api_sdk/src/auth/api_key_auth.dart';
 export 'package:peer_tube_api_sdk/src/auth/basic_auth.dart';
@@ -31,6 +30,7 @@ export 'package:peer_tube_api_sdk/src/api/my_history_api.dart';
 export 'package:peer_tube_api_sdk/src/api/my_notifications_api.dart';
 export 'package:peer_tube_api_sdk/src/api/my_subscriptions_api.dart';
 export 'package:peer_tube_api_sdk/src/api/my_user_api.dart';
+export 'package:peer_tube_api_sdk/src/api/overview_videos_api.dart';
 export 'package:peer_tube_api_sdk/src/api/plugins_api.dart';
 export 'package:peer_tube_api_sdk/src/api/register_api.dart';
 export 'package:peer_tube_api_sdk/src/api/runner_jobs_api.dart';
@@ -145,6 +145,9 @@ export 'package:peer_tube_api_sdk/src/model/automatic_tag_available_available_in
 export 'package:peer_tube_api_sdk/src/model/block_status.dart';
 export 'package:peer_tube_api_sdk/src/model/block_status_accounts_value.dart';
 export 'package:peer_tube_api_sdk/src/model/block_status_hosts_value.dart';
+export 'package:peer_tube_api_sdk/src/model/category_overview.dart';
+export 'package:peer_tube_api_sdk/src/model/channel.dart';
+export 'package:peer_tube_api_sdk/src/model/channel_overview.dart';
 export 'package:peer_tube_api_sdk/src/model/comment_auto_tag_policies.dart';
 export 'package:peer_tube_api_sdk/src/model/comment_thread_post_response.dart';
 export 'package:peer_tube_api_sdk/src/model/comment_thread_response.dart';
@@ -196,6 +199,7 @@ export 'package:peer_tube_api_sdk/src/model/notification_video.dart';
 export 'package:peer_tube_api_sdk/src/model/notification_video_abuse.dart';
 export 'package:peer_tube_api_sdk/src/model/notification_video_import.dart';
 export 'package:peer_tube_api_sdk/src/model/o_auth_client.dart';
+export 'package:peer_tube_api_sdk/src/model/overview_videos_response.dart';
 export 'package:peer_tube_api_sdk/src/model/playback_metric_create.dart';
 export 'package:peer_tube_api_sdk/src/model/playlist_element.dart';
 export 'package:peer_tube_api_sdk/src/model/plugin.dart';
@@ -285,6 +289,7 @@ export 'package:peer_tube_api_sdk/src/model/server_config_views_views_watching_i
 export 'package:peer_tube_api_sdk/src/model/server_stats.dart';
 export 'package:peer_tube_api_sdk/src/model/server_stats_videos_redundancy_inner.dart';
 export 'package:peer_tube_api_sdk/src/model/storyboard.dart';
+export 'package:peer_tube_api_sdk/src/model/tag_overview.dart';
 export 'package:peer_tube_api_sdk/src/model/uninstall_plugin_request.dart';
 export 'package:peer_tube_api_sdk/src/model/update_me.dart';
 export 'package:peer_tube_api_sdk/src/model/update_user.dart';

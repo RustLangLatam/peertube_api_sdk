@@ -17,8 +17,6 @@
     - Channel and playlist management.
     - Live streaming support.
     - Comments, likes, and dislikes.
-- **DVR Support for Live Streams**: Rewind live streams within the buffer window.
-- **Customizable Video Player**: Built-in support for `video_player` and `chewie` for seamless video playback.
 - **Cross-Platform**: Works on Android, iOS, and web.
 - **Open Source**: Fully open-source and MIT licensed.
 
@@ -41,7 +39,7 @@ Add the `peer_tube_api_sdk` package to your `pubspec.yaml` file:
 
 ```yaml
 dependencies:
-  peer_tube_api_sdk: ^1.0.4
+  peer_tube_api_sdk: ^1.0.5
 ```
 
 Then, run `flutter pub get` to install the package.
