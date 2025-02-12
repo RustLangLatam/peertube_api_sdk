@@ -59,7 +59,6 @@ import 'package:peer_tube_api_sdk/src/api/video_transcoding_api.dart';
 import 'package:peer_tube_api_sdk/src/api/video_upload_api.dart';
 import 'package:peer_tube_api_sdk/src/api/videos_api.dart';
 import 'package:peer_tube_api_sdk/src/api/watched_words_api.dart';
-import 'package:peer_tube_api_sdk/src/api/watched_words_api.dart';
 import 'package:peer_tube_api_sdk/src/api/overview_videos_api.dart';
 
 import 'package:peer_tube_api_sdk/src/version.g.dart';
