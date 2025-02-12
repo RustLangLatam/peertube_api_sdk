@@ -2,7 +2,6 @@
 // AUTO-GENERATED FILE, DO NOT MODIFY!
 //
 
-// reexport packages;
 export 'package:one_of/one_of.dart';
 export 'package:built_value/json_object.dart';
 
@@ -146,7 +145,6 @@ export 'package:peer_tube_api_sdk/src/model/block_status.dart';
 export 'package:peer_tube_api_sdk/src/model/block_status_accounts_value.dart';
 export 'package:peer_tube_api_sdk/src/model/block_status_hosts_value.dart';
 export 'package:peer_tube_api_sdk/src/model/category_overview.dart';
-export 'package:peer_tube_api_sdk/src/model/channel.dart';
 export 'package:peer_tube_api_sdk/src/model/channel_overview.dart';
 export 'package:peer_tube_api_sdk/src/model/comment_auto_tag_policies.dart';
 export 'package:peer_tube_api_sdk/src/model/comment_thread_post_response.dart';

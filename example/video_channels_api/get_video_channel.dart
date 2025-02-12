@@ -5,7 +5,7 @@ import 'package:peer_tube_api_sdk/peer_tube_api_sdk.dart';
 import '../peertube_api_example.dart';
 
 // Base URL for the PeerTube API
-const baseUrl = 'https://peertube.cpy.re';
+const baseUrl = 'https://peertube.tv';
 /// Main function that demonstrates how to use the PeerTube API to get a video.
 ///
 /// This function creates a PeerTube API client, sets the video ID, and then uses
@@ -16,15 +16,8 @@ Future<void> main() async {
   final api = getApiClient(baseUrl).getVideoChannelsApi();
 
   try {
-    // Use the API to retrieve the video list
-    final response = await api.getVideoChannelVideos(
-      channelHandle: '1fccb6e4-863c-4538-a4db-770c464f06a1',
-      start: 0,
-      count: 10,
-      sort: '-publishedAt',
-      skipCount: 'true',
-      isLive: false,
-      nsfw: 'false',
+    final response = await api.getVideoChannel(
+      channelHandle: 'gesus_channel@tube.tchncs.de',
     );
     if (response.data != null) {
       // Print the video data if it's not null
@@ -32,6 +25,6 @@ Future<void> main() async {
     }
   } on DioException catch (e) {
     // Handle any exceptions that occur during the API call
-    print('Exception when calling VideoChannelsApi->getVideoChannelVideos: $e\n');
+    print('Exception when calling VideoChannelsApi->getVideoChannel: $e\n');
   }
 }

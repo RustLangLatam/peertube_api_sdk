@@ -5,7 +5,7 @@
 // ignore_for_file: unused_element
 import 'package:built_collection/built_collection.dart';
 import 'package:peer_tube_api_sdk/src/model/video.dart';
-import 'package:peer_tube_api_sdk/src/model/channel.dart';
+import 'package:peer_tube_api_sdk/src/model/video_channel_summary.dart';
 import 'package:built_value/built_value.dart';
 import 'package:built_value/serializer.dart';
 
@@ -20,7 +20,7 @@ part 'channel_overview.g.dart';
 abstract class ChannelOverview
     implements Built<ChannelOverview, ChannelOverviewBuilder> {
   @BuiltValueField(wireName: r'channel')
-  Channel? get channel;
+  VideoChannelSummary? get channel;
 
   @BuiltValueField(wireName: r'videos')
   BuiltList<Video>? get videos;
@@ -55,7 +55,7 @@ class _$ChannelOverviewSerializer
       yield r'channel';
       yield serializers.serialize(
         object.channel,
-        specifiedType: const FullType(Channel),
+        specifiedType: const FullType(VideoChannelSummary),
       );
     }
     if (object.videos != null) {
@@ -93,8 +93,8 @@ class _$ChannelOverviewSerializer
         case r'channel':
           final valueDes = serializers.deserialize(
             value,
-            specifiedType: const FullType(Channel),
-          ) as Channel;
+            specifiedType: const FullType(VideoChannelSummary),
+          ) as VideoChannelSummary;
           result.channel.replace(valueDes);
           break;
         case r'videos':

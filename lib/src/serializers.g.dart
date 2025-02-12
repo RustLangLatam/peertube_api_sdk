@@ -105,7 +105,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..add(BlockStatusAccountsValue.serializer)
       ..add(BlockStatusHostsValue.serializer)
       ..add(CategoryOverview.serializer)
-      ..add(Channel.serializer)
       ..add(ChannelOverview.serializer)
       ..add(CommentAutoTagPolicies.serializer)
       ..add(CommentThreadPostResponse.serializer)
@@ -373,9 +372,6 @@ Serializers _$serializers = (new Serializers().toBuilder()
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(Account)]),
           () => new ListBuilder<Account>())
-      ..addBuilderFactory(
-          const FullType(BuiltList, const [const FullType(ActorImage)]),
-          () => new ListBuilder<ActorImage>())
       ..addBuilderFactory(
           const FullType(BuiltList, const [const FullType(ActorImage)]),
           () => new ListBuilder<ActorImage>())

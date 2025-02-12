@@ -17,3 +17,7 @@
 ## 1.0.5
 
 - add getOverviewVideos
+
+## 1.0.6
+
+- fix VideoChannelSummary getOverviewVideos

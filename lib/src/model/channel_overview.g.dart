@@ -8,7 +8,7 @@ part of 'channel_overview.dart';
 
 class _$ChannelOverview extends ChannelOverview {
   @override
-  final Channel? channel;
+  final VideoChannelSummary? channel;
   @override
   final BuiltList<Video>? videos;
 
@@ -55,9 +55,10 @@ class ChannelOverviewBuilder
     implements Builder<ChannelOverview, ChannelOverviewBuilder> {
   _$ChannelOverview? _$v;
 
-  ChannelBuilder? _channel;
-  ChannelBuilder get channel => _$this._channel ??= new ChannelBuilder();
-  set channel(ChannelBuilder? channel) => _$this._channel = channel;
+  VideoChannelSummaryBuilder? _channel;
+  VideoChannelSummaryBuilder get channel =>
+      _$this._channel ??= new VideoChannelSummaryBuilder();
+  set channel(VideoChannelSummaryBuilder? channel) => _$this._channel = channel;
 
   ListBuilder<Video>? _videos;
   ListBuilder<Video> get videos => _$this._videos ??= new ListBuilder<Video>();

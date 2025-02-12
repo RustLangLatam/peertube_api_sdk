@@ -95,7 +95,6 @@ import 'package:peer_tube_api_sdk/src/model/block_status.dart';
 import 'package:peer_tube_api_sdk/src/model/block_status_accounts_value.dart';
 import 'package:peer_tube_api_sdk/src/model/block_status_hosts_value.dart';
 import 'package:peer_tube_api_sdk/src/model/category_overview.dart';
-import 'package:peer_tube_api_sdk/src/model/channel.dart';
 import 'package:peer_tube_api_sdk/src/model/channel_overview.dart';
 import 'package:peer_tube_api_sdk/src/model/comment_auto_tag_policies.dart';
 import 'package:peer_tube_api_sdk/src/model/comment_thread_post_response.dart';
@@ -425,7 +424,6 @@ part 'serializers.g.dart';
   BlockStatusAccountsValue,
   BlockStatusHostsValue,
   CategoryOverview,
-  Channel,
   ChannelOverview,
   CommentAutoTagPolicies,
   CommentThreadPostResponse,
